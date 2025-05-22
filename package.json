@@ -1,0 +1,33 @@
+{
+	"name": "nodejs-api-template",
+	"version": "0.1.0",
+	"private": true,
+	"description": "A template for creating a Node.js API",
+	"license": "MIT",
+	"type": "module",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsc --project tsconfig.build.json",
+		"dev": "node --watch --experimental-strip-types --experimental-transform-types src/app/index.ts",
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"start": "node dist/index.js",
+		"test": "node --test --experimental-strip-types --experimental-transform-types"
+	},
+	"dependencies": {
+		"@hono/node-server": "1.14.2",
+		"hono": "4.7.10"
+	},
+	"devDependencies": {
+		"@eslint/js": "9.27.0",
+		"@types/node": "22.15.21",
+		"eslint": "9.27.0",
+		"eslint-config-prettier": "10.1.5",
+		"prettier": "3.5.3",
+		"prettier-plugin-packagejson": "2.5.14",
+		"typescript": "5.8.3",
+		"typescript-eslint": "8.32.1"
+	}
+}
