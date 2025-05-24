@@ -11,8 +11,6 @@
 		"strict": true,
 		"noUncheckedIndexedAccess": true,
 		"noImplicitOverride": true,
-		"rewriteRelativeImportExtensions": true,
-		"erasableSyntaxOnly": true,
 		"module": "NodeNext",
 		"outDir": "dist",
 		"lib": ["es2022"]

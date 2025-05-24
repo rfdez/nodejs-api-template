@@ -1,7 +1,7 @@
 import { testClient } from "hono/testing";
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import app from "../../src/app/app.ts";
+import app from "../../src/app/app.js";
 
 describe("ping endpoint", () => {
 	const client = testClient(app);
